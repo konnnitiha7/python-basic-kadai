@@ -6,7 +6,7 @@ for lists in (list):
 i = 0
 cnt = 0
 
-while cnt != 1:
+while cnt != 2:
     print (list[i])
     i= i + 1
 
