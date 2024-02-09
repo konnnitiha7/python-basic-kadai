@@ -1,15 +1,14 @@
 list = ["水","金","地","火","木","土","天","海","冥"]
 
-for lists in (list * 2):
+for lists in (list):
     print (lists)
 
 i = 0
 cnt = 0
 
-while cnt != 2:
+while cnt != 1:
     print (list[i])
     i= i + 1
 
     if list[i] == "冥":
         cnt = cnt + 1
-        i = 0
