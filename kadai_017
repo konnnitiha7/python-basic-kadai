@@ -1,0 +1,30 @@
+class Human:
+    def __init__(self):
+        self.name = ""
+        self.age = ""
+
+    #メソッド定義
+    def set_name(self, name):
+        self.name = name
+
+    def set_age(self, age):
+        self.age = age
+
+    def check_adult (self):
+          if self.age >= 20:
+              print(str(self.age) + "歳は大人です")
+          else:
+              print(str(self.age) +"歳は大人ではありません")
+#インスタンス
+Man = Human()
+Woman= Human()
+
+#メゾットアクセス
+Man.set_name("侍太郎")
+Man.set_age(1)
+Man.check_adult()
+
+Woman.set_name("侍花子")
+Woman.set_age(25)
+Woman.check_adult()
+
