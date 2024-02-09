@@ -1,0 +1,7 @@
+def is_tax(price,tax):
+
+  total= price * tax
+
+  print(f"{total}円")
+
+is_tax(1200, 1.1)
