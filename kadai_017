@@ -15,16 +15,25 @@ class Human:
               print(str(self.age) + "歳は大人です")
           else:
               print(str(self.age) +"歳は大人ではありません")
-#インスタンス
-Man = Human()
-Woman= Human()
+
+Human1 = Human()
+Human2 = Human()
+Human3 = Human()
+Human4 = Human()
+
+Human1.set_name("一郎")
+Human1.set_age(1)
+Human2.set_name("二郎")
+Human2.set_age(10)
+Human3.set_name("三郎")
+Human3.set_age(20)
+Human4.set_name("四郎")
+Human4.set_age(30)
+
+#インスタンス?
+Human_list = [Human1,Human2,Human3,Human4]
 
 #メゾットアクセス
-Man.set_name("侍太郎")
-Man.set_age(1)
-Man.check_adult()
 
-Woman.set_name("侍花子")
-Woman.set_age(25)
-Woman.check_adult()
-
+for i in Human_list:
+    i.check_adult()
