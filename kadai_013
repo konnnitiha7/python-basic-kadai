@@ -1,4 +1,6 @@
 def is_tax(price,tax):
-    return  price + (price * tax )
+      
+      price = price + (price * tax )
+      return price
 
 print(is_tax(1200,0.1))
